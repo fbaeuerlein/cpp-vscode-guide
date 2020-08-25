@@ -124,7 +124,7 @@ For enhanced visualization in doxygen, install graphviz.
 
     apt install graphviz
     
-If you like easy visualization of customizable sequence charts, maybe mscgen is the right thing for you. You can install it wit:
+If you like easy visualization of customizable sequence charts, maybe mscgen is the right thing for you. You can install it with:
 
     apt install mscgen
 
