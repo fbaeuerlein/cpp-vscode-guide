@@ -12,7 +12,7 @@ A small guide for useful extensions to unleash the power of Visual Studio Code f
     - [Microsoft CMake Tools](#microsoft-cmake-tools)
     - [Support for writing CMake files](#support-for-writing-cmake-files)
 - [Docker](#docker)
-  - [Installing docker](#installing-docker)
+  - [Docker extension](#docker-extension)
 - [Documentation](#documentation)
   - [doxygen](#doxygen)
   - [Markdown](#markdown)
@@ -91,7 +91,7 @@ For support of writing CMakeLists files, the [CMake extension](https://marketpla
 
 ## Docker
 
-### Installing docker
+### Docker extension
 
 The [docker extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker) gives you a good insight on the current images on the system and helps you to build and manage containers.
 
@@ -149,7 +149,7 @@ There are several markdown related extensions available. But currently a very ni
 
 If you are developing for remotely connected devices (e.g. RPi), the [Remote - SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh) extension saves a lot of time. It enables you to work with VS Code like you are used to work locally. The communication is done via SSH. So also autlogin via certificates is possible.  
 
-![https://microsoft.github.io/vscode-remote-release/images/ssh-readme.gif](https://microsoft.github.io/vscode-remote-release/images/ssh-readme.gif)
+![SSH extension](https://microsoft.github.io/vscode-remote-release/images/ssh-readme.gif)
 
 ---
 
