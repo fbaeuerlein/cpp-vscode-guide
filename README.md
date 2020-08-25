@@ -13,6 +13,8 @@ A small guide for useful extensions to unleash the power of Visual Studio Code f
     - [Support for writing CMake files](#support-for-writing-cmake-files)
 - [Docker](#docker)
   - [Docker extension](#docker-extension)
+  - [VS Code Remote Containers](#vs-code-remote-containers)
+- [https://github.com/Microsoft/vscode-dev-containers](#httpsgithubcommicrosoftvscode-dev-containers)
 - [Documentation](#documentation)
   - [doxygen](#doxygen)
   - [Markdown](#markdown)
@@ -99,10 +101,19 @@ The [docker extension](https://marketplace.visualstudio.com/items?itemName=ms-az
 
 For installing docker, see [https://docs.docker.com/get-docker/](https://docs.docker.com/get-docker/).
 
+---
 
-<!-- 
-TODO:  Docker remote containers
-Developing in a container! see .devcontainer/* files. -->
+### VS Code Remote Containers
+
+Developing in a container! The [VS Code Remote Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) lets you use a docker container as development environment. No more installing toolchains and dependencies! Simply write a Dockerfile and share the development environment with others and use it simply with a click out of VS Code. 
+
+![https://microsoft.github.io/vscode-remote-release/images/remote-containers-readme.gif](https://microsoft.github.io/vscode-remote-release/images/remote-containers-readme.gif)
+
+After installation map your development folder via the command palette (`Ctrl+Shift+P`), selecting **Remote-Containers: Open Folder in Container** to a specified docker container.
+
+See the `.devcontainer/devcontainer.json` settings file for details. It refers to the container description in `examples/Dockerfile`.
+
+For more details, see [https://github.com/Microsoft/vscode-dev-containers](https://github.com/Microsoft/vscode-dev-containers).
 
 ---
 
