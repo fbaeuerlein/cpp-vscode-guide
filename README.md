@@ -14,7 +14,6 @@ A small guide for useful extensions to unleash the power of Visual Studio Code f
 - [Docker](#docker)
   - [Docker extension](#docker-extension)
   - [VS Code Remote Containers](#vs-code-remote-containers)
-- [https://github.com/Microsoft/vscode-dev-containers](#httpsgithubcommicrosoftvscode-dev-containers)
 - [Documentation](#documentation)
   - [doxygen](#doxygen)
   - [Markdown](#markdown)
