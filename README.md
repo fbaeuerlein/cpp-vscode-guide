@@ -42,6 +42,7 @@ A small guide for useful extensions to unleash the power of Visual Studio Code f
 - [Some shortcuts and features](#some-shortcuts-and-features)
   - [Official VS Code shortcut cheat sheet](#official-vs-code-shortcut-cheat-sheet)
   - [Column selection mode](#column-selection-mode)
+- [About CMake variants](#about-cmake-variants)
 - [References](#references)
 
 ---
@@ -272,6 +273,7 @@ After changing the `cmake-variants.yaml`, you can choose a build variant (click 
 
 ![CMake variants selection](images/cmake-variants.png)
 
+More about `cmake-variants.yaml` in the [About CMake variants](#about-cmake-variants) section.
 
 ### Using lcov to generate coverage info file
 
@@ -310,6 +312,8 @@ Initially you can add a sanitizer section to your `cmake-variants.yaml` that con
           long: build without adresss sanitizer instrumentation
 
 The following subsections show the use of the clang sanitizers. Simply add the configuration to the `sanitizer` section described above within the `cmake-variants.yaml`. You can see a sample file within the `.vscode/` folder of the project.
+
+More about `cmake-variants.yaml` in the [About CMake variants](#about-cmake-variants) section.
 
 ---
 
@@ -446,6 +450,14 @@ The basic VS Code shortcuts can be found [here](https://code.visualstudio.com/sh
 ### Column selection mode
 
 That is a really cool feature, especially for refactoring/renaming tasks. So don't miss to use it with opening the command palette (`Ctrl+Shift+P`) and run **Toggle column selection mode**.
+
+---
+
+## About CMake variants
+
+The `cmake-variants.yaml` is a nice tool to setup different compiler instrumentations and generally changing the flags. But there's one problem currently. If you use the same CMake definitions in different combined variants, only the last one will be taken. E.g. if you enable coverage and the address sanitizer, only one of it will work because they share the same `CMAKE_CXX_FLAGS` definition. 
+
+Another drawback is the use of the settings within a CI pipeline. So using an additional CMake include file might be a better approach. Then you can activate this over a variant definition and it it is also usable by a pipeline. I will provide an example if i got time to do it.
 
 ---
 
