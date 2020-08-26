@@ -1,0 +1,46 @@
+
+buildType:
+  default: debug
+  choices:
+    debug:
+      short: Debug
+      long: Emit debug information
+      buildType: Debug
+    release:
+      short: Release
+      long: Optimize generated code
+      buildType: Release
+
+
+instrumentation:
+
+  default: NoInstrumentation # no sanitizer/no instrumentation
+  choices:
+
+    NoSan:
+      short: NoInstrumentation
+      long: build without any instrumentation
+
+    Coverage:
+      short: Coverage
+      long: build with coverage instrumentation
+      settings:
+        CMAKE_CXX_FLAGS: "-fprofile-arcs -ftest-coverage "
+        CMAKE_C_FLAGS: "-fprofile-arcs -ftest-coverage"
+        CMAKE_EXE_LINKER_FLAGS: "--coverage"
+
+    ASan:
+      short: ASan
+      long: build with adresss sanitizer instrumentation
+      settings:
+        CMAKE_CXX_FLAGS: "-fsanitize=address -fno-omit-frame-pointer -fsanitize-address-use-after-scope"
+        CMAKE_C_FLAGS: "-fsanitize=address -fno-omit-frame-pointer -fsanitize-address-use-after-scope"
+        CMAKE_EXE_LINKER_FLAGS: "-fsanitize=address"
+
+    TSan:
+      short: TSan
+      long: build with thread sanitizer instrumentation
+      settings:
+        CMAKE_CXX_FLAGS: "-fsanitize=thread"
+        CMAKE_C_FLAGS: "-fsanitize=thread"
+        CMAKE_EXE_LINKER_FLAGS: "-fsanitize=thread"

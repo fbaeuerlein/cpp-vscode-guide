@@ -268,7 +268,7 @@ There you can set different variants of your toolchain. Below you can see an exa
           short: no_coverage
           long: build without coverage
 
-After changing the `cmake-variants.json`, you can choose a build variant (click 1 and select in 2) as shown in the screenshot. Alternatively you can open the command palette (`Ctrl+Shift+P`) and run **CMake: Select Variant**.
+After changing the `cmake-variants.yaml`, you can choose a build variant (click 1 and select in 2) as shown in the screenshot. Alternatively you can open the command palette (`Ctrl+Shift+P`) and run **CMake: Select Variant**.
 
 ![CMake variants selection](images/cmake-variants.png)
 
@@ -309,7 +309,7 @@ Initially you can add a sanitizer section to your `cmake-variants.yaml` that con
           short: NoSan
           long: build without adresss sanitizer instrumentation
 
-The following subsections show the use of the clang sanitizers. Simply add the configuration to the `sanitizer` section described above within the `cmake-variants.yaml`.
+The following subsections show the use of the clang sanitizers. Simply add the configuration to the `sanitizer` section described above within the `cmake-variants.yaml`. You can see a sample file within the `.vscode/` folder of the project.
 
 ---
 
@@ -430,7 +430,7 @@ The [RedHat YAML Extension](https://marketplace.visualstudio.com/items?itemName=
 
 ![RedHat YAML Extension](https://raw.githubusercontent.com/redhat-developer/vscode-yaml/master/images/demo.gif)
 
-- HexInspector
+<!-- - HexInspector -->
 
 
 ---
