@@ -51,11 +51,15 @@ A small guide for useful extensions to unleash the power of Visual Studio Code f
 
 This project should give an overview over some extensions and hints for C/C++ development with VS Code. There are a lot extensions around that really improve working with VCS. I want to show which of these are really valuable and give some tutorial how to use/integrate them.
 
+Mostly i'm using CMake and Linux. So the main focus will be on this combination. Maybe i will extend this to the [Windows-Subsystem for Linux (WSL)](https://docs.microsoft.com/de-de/windows/wsl/install-win10) in future.
+
 ---
 
 ## C/C++ Extension
 
 First of all you need the official Microsoft C/C++ extension found [here](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools).
+
+A general introduction to develop C/C++ with VS Code under Linux could be found [here](https://code.visualstudio.com/docs/cpp/config-linux).
 
 ---
 
@@ -71,7 +75,7 @@ For more details of the plugin see [https://code.visualstudio.com/docs/editor/gi
 
 ### CMake
 
-Some nice tools to help you with CMake projects.
+Some nice tools and extension to help you with CMake projects.
 
 ---
 
@@ -463,6 +467,7 @@ Another drawback is the use of the settings within a CI pipeline. So using an ad
 
 ## References
 
+- More on VS Code, C/C++ & Linux: [https://code.visualstudio.com/docs/cpp/config-linux](https://code.visualstudio.com/docs/cpp/config-linux)
 - More on CMake variants and CMake extension: [https://code.visualstudio.com/docs/cpp/cmake-linux#_select-a-variant](https://code.visualstudio.com/docs/cpp/cmake-linux#_select-a-variantctrl)
 - CTest: [https://cmake.org/cmake/help/latest/manual/ctest.1.html](https://cmake.org/cmake/help/latest/manual/ctest.1.html)
 - Working with containers in VS Code: [https://code.visualstudio.com/docs/containers/overview](https://code.visualstudio.com/docs/containers/overview)
