@@ -107,7 +107,7 @@ For installing docker, see [https://docs.docker.com/get-docker/](https://docs.do
 
 Developing in a container! The [VS Code Remote Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) lets you use a docker container as development environment. No more installing toolchains and dependencies! Simply write a Dockerfile and share the development environment with others and use it simply with a click out of VS Code. 
 
-![Remote Containers](https://microsoft.github.io/vscode-remote-release/images/remote-containers-readme.gif)
+<!-- ![Remote Containers](https://microsoft.github.io/vscode-remote-release/images/remote-containers-readme.gif) -->
 
 After installation map your development folder via the command palette (`Ctrl+Shift+P`), selecting **Remote-Containers: Open Folder in Container** to a specified docker container.
 
@@ -160,7 +160,7 @@ There are several markdown related extensions available. But currently a very ni
 
 If you are developing for remotely connected devices (e.g. RPi), the [Remote - SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh) extension saves a lot of time. It enables you to work with VS Code like you are used to work locally. The communication is done via SSH. So also autlogin via certificates is possible.  
 
-![SSH extension](https://microsoft.github.io/vscode-remote-release/images/ssh-readme.gif)
+![SSH extension](images/ssh-ext.png)
 
 ---
 
