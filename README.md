@@ -21,6 +21,8 @@ A small guide for useful extensions to unleash the power of Visual Studio Code f
   - [Remote SSH Extension](#remote-ssh-extension)
 - [Static analysis](#static-analysis)
   - [clang-tidy](#clang-tidy)
+- [Code cleanup](#code-cleanup)
+  - [Include what you use (IWYU)](#include-what-you-use-iwyu)
 - [Testing](#testing)
   - [Test Explorer UI](#test-explorer-ui)
   - [C++ TestMate](#c-testmate)
@@ -217,6 +219,38 @@ To avoid linting of "special" code:
 
 ---
 
+## Code cleanup
+
+This section should show some tools to do general code cleanup.
+
+### Include what you use (IWYU)
+
+Include what you use helps you to reduce inclusions of header files and thus can help you to speed up compilation time and also can lead to fewer recompiles. 
+
+To use it unter Linux (Ubuntu/Debian) just install by: 
+
+    apt install iwyu
+
+To run it for the currently opened file from VS Code, install the [Include what you use extenstion](https://marketplace.visualstudio.com/items?itemName=pokowaka.pokowaka-iwyu). 
+
+Initially you have to add at least the following entries to you `settings.json`:
+
+    "iwyu.exe": "/usr/bin/iwyu", 
+    "iwyu.compile_commands": "${workspaceFolder}/build/compile_commands.json"
+
+<!-- TODO: extend configuration -->
+
+
+![https://raw.githubusercontent.com/pokowaka/vscode-iwyu/master/images/small_demo.gif](https://raw.githubusercontent.com/pokowaka/vscode-iwyu/master/images/small_demo.gif)
+
+
+For more details see [https://github.com/include-what-you-use/include-what-you-use](https://github.com/include-what-you-use/include-what-you-use)
+
+Especially when you want to keep certain includes, this [site](https://github.com/include-what-you-use/include-what-you-use/blob/master/docs/IWYUPragmas.md) gives you an overview of pragmas that turn of IWYU. 
+
+
+---
+
 ## Testing
 
 ### Test Explorer UI
@@ -297,7 +331,7 @@ Add path to your info file in VS Code `settings.json`
     
     "markiscodecoverage.searchCriteria": "<build path>/lcov.info"
     
-TODO: How to add to VS Code launch and CMake?
+<!-- TODO: How to add to VS Code launch and CMake? -->
 
 ---
 

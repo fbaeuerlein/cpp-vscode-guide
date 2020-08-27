@@ -1,5 +1,5 @@
 #include <gtest/gtest.h>
-#include "../include/MyClass1.hxx"
+#include "../include/MyClass2.hxx"
 
 TEST(MyClass2, constructed_object_has_the_right_value)
 {

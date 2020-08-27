@@ -8,7 +8,7 @@ include(CTest)
 
 macro(simply_add_test TESTNAME FILES)
     add_executable(${TESTNAME} ${FILES})
-    target_link_libraries(${TESTNAME} gtest gmock gtest_main)
+    target_link_libraries(${TESTNAME} gtest gmock gtest_main my_lib)
     add_test(${TESTNAME} ${TESTNAME})
 endmacro()
 

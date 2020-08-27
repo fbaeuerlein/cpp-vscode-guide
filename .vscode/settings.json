@@ -1,4 +1,7 @@
 {
     "cmake.sourceDirectory": "${workspaceFolder}/examples",
-    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools"
+    "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools", 
+
+    "iwyu.exe": "/usr/bin/iwyu", 
+    "iwyu.compile_commands": "${workspaceFolder}/build/compile_commands.json"
 }
