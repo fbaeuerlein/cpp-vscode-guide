@@ -41,6 +41,7 @@ A small guide for useful extensions to unleash the power of Visual Studio Code f
   - [Bracket Pair Colorizer](#bracket-pair-colorizer)
   - [Todo Tree](#todo-tree)
   - [YAML](#yaml)
+  - [Code Spell Checker](#code-spell-checker)
 - [Some shortcuts and features](#some-shortcuts-and-features)
   - [Official VS Code shortcut cheat sheet](#official-vs-code-shortcut-cheat-sheet)
   - [Column selection mode](#column-selection-mode)
@@ -164,7 +165,7 @@ There are several markdown related extensions available. But currently a very ni
 
 ### Remote SSH Extension
 
-If you are developing for remotely connected devices (e.g. RPi), the [Remote - SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh) extension saves a lot of time. It enables you to work with VS Code like you are used to work locally. The communication is done via SSH. So also autlogin via certificates is possible.  
+If you are developing for remotely connected devices (e.g. RPi), the [Remote - SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh) extension saves a lot of time. It enables you to work with VS Code like you are used to work locally. The communication is done via SSH. So also autologin via certificates is possible.  
 
 ![SSH extension](images/ssh-ext.png)
 
@@ -227,11 +228,11 @@ This section should show some tools to do general code cleanup.
 
 Include what you use helps you to reduce inclusions of header files and thus can help you to speed up compilation time and also can lead to fewer recompiles. 
 
-To use it unter Linux (Ubuntu/Debian) just install by: 
+To use it under Linux (Ubuntu/Debian) just install by: 
 
     apt install iwyu
 
-To run it for the currently opened file from VS Code, install the [Include what you use extenstion](https://marketplace.visualstudio.com/items?itemName=pokowaka.pokowaka-iwyu). 
+To run it for the currently opened file from VS Code, install the [Include what you use extension](https://marketplace.visualstudio.com/items?itemName=pokowaka.pokowaka-iwyu). 
 
 Initially you have to add at least the following entries to you `settings.json`:
 
@@ -347,7 +348,7 @@ Initially you can add a sanitizer section to your `cmake-variants.yaml` that con
       choices:
         NoSan:
           short: NoSan
-          long: build without adresss sanitizer instrumentation
+          long: build without address sanitizer instrumentation
 
 The following subsections show the use of the clang sanitizers. Simply add the configuration to the `sanitizer` section described above within the `cmake-variants.yaml`. You can see a sample file within the `.vscode/` folder of the project.
 
@@ -396,14 +397,14 @@ For more details see [https://clang.llvm.org/docs/MemorySanitizer.html](https://
 
 ### UndefinedBehavior Sanitizer
 
-The undefined behavior sanitizer scans your code for occurence of undefined behavior. 
+The undefined behavior sanitizer scans your code for occurrence of undefined behavior. 
 
     ...
     choices: 
     ...
       UBSan:
         short: UBSan
-        long: build with undefined behaviour sanitizer instrumentation
+        long: build with undefined behavior sanitizer instrumentation
         settings:
           CMAKE_CXX_FLAGS: "-fsanitize=undefined"
           CMAKE_C_FLAGS: "-fsanitize=undefined"
@@ -468,11 +469,19 @@ A sample `.clang-format` file could be found in the project root.
 ---
 
 ### YAML
+
 The [RedHat YAML Extension](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml) helps you writing YAML files with formatting and checking the file content.
 
 ![RedHat YAML Extension](https://raw.githubusercontent.com/redhat-developer/vscode-yaml/master/images/demo.gif)
 
-<!-- - HexInspector -->
+
+### Code Spell Checker 
+
+[Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) helps you to catch common spelling mistakes. It supports different dictionaries and also helps you to improve your documentation.
+
+![Code Spell Checker](https://raw.githubusercontent.com/streetsidesoftware/vscode-spell-checker/master/packages/client/images/example.gif)
+
+<!-- TODO: HexInspector -->
 
 
 ---
