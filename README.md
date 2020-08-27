@@ -246,7 +246,7 @@ Initially you have to add at least the following entries to you `settings.json`:
 
 For more details see [https://github.com/include-what-you-use/include-what-you-use](https://github.com/include-what-you-use/include-what-you-use)
 
-Especially when you want to keep certain includes, this [site](https://github.com/include-what-you-use/include-what-you-use/blob/master/docs/IWYUPragmas.md) gives you an overview of pragmas that turn of IWYU. 
+Especially when you want to keep certain includes, this [site](https://github.com/include-what-you-use/include-what-you-use/blob/master/docs/IWYUPragmas.md) gives you an overview of pragmas that turn off IWYU. 
 
 
 ---
