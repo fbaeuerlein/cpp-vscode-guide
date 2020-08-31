@@ -1,3 +1,5 @@
 build/
 latex/
 html/
+coverage/
+lcov.info

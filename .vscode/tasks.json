@@ -1,0 +1,91 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+
+    // input prompt to ask for destination of coverage report
+    "inputs": [
+        {
+            "id": "coverageHtmlFolder",
+            "type": "promptString",
+            "description": "Select folder for coverage HTML report",
+            "default": "${workspaceFolder}/coverage"
+        }
+    ],
+    "tasks": [
+        {
+            "label": "lcov",
+            "type": "shell",
+            "command": "lcov",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "args": [
+                "--capture",
+                "--directory",
+                ".",
+                "--output-file",
+                "lcov.info"
+            ]
+        },
+        {
+            "label": "lcov filter",
+            "type": "shell",
+            "command": "lcov",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "args": [
+                "--remove",
+                "lcov.info",
+                "'/usr/*'",
+                "'*/googletest/*'",
+                "--output-file",
+                "lcov.info"
+            ]
+        },
+        {
+            "label": "genhtml",
+            "type": "shell",
+            "command": "genhtml",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "args": [
+                "lcov.info",
+                "--output-directory",
+                "coverage", 
+                "-o", 
+                "${input:coverageHtmlFolder}"
+            ]
+        },
+        {
+            "label": "lcov & genhtml",
+            "dependsOn": [
+                "lcov",
+                "lcov filter",
+                "genhtml"
+            ],
+            "presentation": {
+                "echo": true,
+                "reveal": "silent",
+                "focus": false,
+                "panel": "shared",
+                "showReuseMessage": true,
+                "clear": false
+            }
+        },
+        {
+            "label": "lcov & genhtml & open",
+            "dependsOn": [
+                "lcov & genhtml"
+            ],
+            "type": "shell",
+            "command": "firefox",
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "args": ["${input:coverageHtmlFolder}/index.html"],
+        }
+    ]
+}
