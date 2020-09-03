@@ -11,5 +11,11 @@ int main(int, char **) // NOLINT
 
     MyClass2 m2(3);
 
+    // clang tidy modernize warning because of NULL instead of nullptr
+    int * p = NULL; 
+
+    // clang tidy warning because of nullptr deref
+    *p = 3;
+    
     return m.value();
 }

@@ -1,10 +1,9 @@
 ---
-Checks:          'clang-diagnostic-*,clang-analyzer-*'
+Checks:          'clang-diagnostic-*,clang-analyzer-*,cppcoreguidelines-*,modernize-*'
 WarningsAsErrors: true
 HeaderFilterRegex: ''
 AnalyzeTemporaryDtors: false
 FormatStyle:     google
-User:            fb
 CheckOptions:
   - key:             cert-dcl16-c.NewSuffixes
     value:           'L;LL;LU;LLU'
