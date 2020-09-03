@@ -211,14 +211,18 @@ Add to your settings.json:
         ],
 
         "clang-tidy.compilerArgs" : [ "-std=c++11" ], 
-        "clang-tidy.buildPath" : "build", 
+        "clang-tidy.buildPath" : "build/", 
         "clang-tidy.executable" : "clang-tidy"    
 
 Enable/disable the checks you need accordingly. Also configure your compiler arguments.
 
+It's also possible to use the `.clang-tidy` file (in the workspace root) to easily configure the settings for clang-tidy. 
+
 To avoid linting of "special" code:
 
     some_code_that_should_be_excluded_from_linting(); // NOLINT or /* NOLINT */
+
+For details on clang-tidy, see [https://clang.llvm.org/extra/clang-tidy/](https://clang.llvm.org/extra/clang-tidy/).
 
 ---
 

@@ -4,4 +4,8 @@
     
     "iwyu.exe": "/usr/bin/iwyu", 
     "iwyu.compile_commands": "${workspaceFolder}/build/compile_commands.json",
+
+    "clang-tidy.compilerArgs" : [ "-std=c++11" ], 
+    "clang-tidy.buildPath" : "build/", // needs to find the compile_commands.json
+    "clang-tidy.executable" : "clang-tidy"    
 }
