@@ -3,3 +3,4 @@ latex/
 html/
 coverage/
 lcov.info
+.clangd
