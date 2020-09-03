@@ -49,6 +49,9 @@ A small guide for useful extensions to unleash the power of Visual Studio Code f
   - [Column selection mode](#column-selection-mode)
 - [About CMake variants](#about-cmake-variants)
 - [References](#references)
+  - [General](#general)
+  - [CMake](#cmake-1)
+  - [Docker](#docker-1)
 
 ---
 
@@ -65,6 +68,8 @@ Mostly i'm using CMake and Linux. So the main focus will be on this combination.
 First of all you need the official Microsoft C/C++ extension found [here](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools).
 
 A general introduction to develop C/C++ with VS Code under Linux could be found [here](https://code.visualstudio.com/docs/cpp/config-linux).
+
+An official overview of editing C++ with VS Code could be found at [https://code.visualstudio.com/docs/cpp/cpp-ide](https://code.visualstudio.com/docs/cpp/cpp-ide).
 
 ---
 
@@ -89,6 +94,8 @@ Some nice tools and extension to help you with CMake projects.
 To interact with CMake, the CMake Tools extension is there. It could be found [here](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools).
 
 Especially the the CMake Quickstart feature, usable with the command palette (`Ctrl+Shift+P`) running **CMake: Quickstart**, is pretty nice to starting coding right away.
+
+For details on how to setup, configure and build projects, see [https://github.com/microsoft/vscode-cmake-tools/blob/develop/docs/README.md](https://github.com/microsoft/vscode-cmake-tools/blob/develop/docs/README.md)
 
 ---
 
@@ -572,7 +579,16 @@ Another drawback is the use of the settings within a CI pipeline. So using an ad
 
 ## References
 
+### General
+
 - More on VS Code, C/C++ & Linux: [https://code.visualstudio.com/docs/cpp/config-linux](https://code.visualstudio.com/docs/cpp/config-linux)
+- Overview of C++ editing in VS Code: [https://code.visualstudio.com/docs/cpp/cpp-ide](https://code.visualstudio.com/docs/cpp/cpp-ide)
+
+### CMake
+
 - More on CMake variants and CMake extension: [https://code.visualstudio.com/docs/cpp/cmake-linux#_select-a-variant](https://code.visualstudio.com/docs/cpp/cmake-linux#_select-a-variantctrl)
 - CTest: [https://cmake.org/cmake/help/latest/manual/ctest.1.html](https://cmake.org/cmake/help/latest/manual/ctest.1.html)
+
+### Docker 
+- Installing docker: [https://docs.docker.com/get-docker/](https://docs.docker.com/get-docker/)
 - Working with containers in VS Code: [https://code.visualstudio.com/docs/containers/overview](https://code.visualstudio.com/docs/containers/overview)
