@@ -264,6 +264,8 @@ Especially when you want to keep certain includes, this [site](https://github.co
 
 The [Test Explorer UI](https://marketplace.visualstudio.com/items?itemName=hbenl.vscode-test-explorer) provides a extensible UI to run your tests in VS Code. There are multiple adapters for different test frameworks available.
 
+To support your used test framework, an according test adapter has to be installed. I found the C++ TestMate extension pretty valuable for that.
+
 ---
 
 ### C++ TestMate
@@ -271,6 +273,10 @@ The [Test Explorer UI](https://marketplace.visualstudio.com/items?itemName=hbenl
 The [C++ TestMate Extension](https://marketplace.visualstudio.com/items?itemName=matepek.vscode-catch2-test-adapter) allows you to run your GoogleTest, Catch2 and other test framework unittests with the Test Explorer UI.
 
 ![https://raw.githubusercontent.com/matepek/vscode-catch2-test-adapter/master/resources/Screenshot_2019-05-28.png](https://raw.githubusercontent.com/matepek/vscode-catch2-test-adapter/master/resources/Screenshot_2019-05-28.png)
+
+A very nice feature is the debugging capability of the extension. If a certain test fails, you just have to navigate to the desired test case and click at the `Debug this test` button. So you can easily debug the single tests without the need of creating a separate launch configuration.
+
+If you need special settings for a test you can also customize this (e.g. certain random seed, other args, etc.).
 
 ---
 
