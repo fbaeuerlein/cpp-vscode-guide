@@ -21,7 +21,6 @@ A small guide for useful extensions to unleash the power of Visual Studio Code f
 - [Remote development](#remote-development)
   - [Remote SSH Extension](#remote-ssh-extension)
 - [Static analysis](#static-analysis)
-  - [clang-tidy](#clang-tidy)
 - [Code cleanup](#code-cleanup)
   - [Include what you use (IWYU)](#include-what-you-use-iwyu)
 - [Code Coverage](#code-coverage)
@@ -92,9 +91,9 @@ For support of writing CMakeLists files, the [CMake extension](https://marketpla
 
 ---
 
-## [Testing](doc/Testing.md)
+## Testing
 
-See the [Testing](doc/Testing.md) documentation for details.
+VS Code has some nice extensions to handle testing very comfortable. See the [Testing](doc/Testing.md) documentation for details.
 
 ---
 
@@ -172,56 +171,7 @@ If you are developing for remotely connected devices (e.g. RPi), the [Remote - S
 
 ## Static analysis
 
-### clang-tidy
-
-**Doing a static analysis on the fly during your coding session without any additional effort!**
-
-![clang-tidy extension in action](images/clang-tidy.png)
-
-The curly underlined statement was discovered by clang-tidy to be problematic (assign to nullptr).
-
-Installing clang-tidy:
-
-    apt install clang-tidy
-
-Install the following extension for VS Code
-
-<https://marketplace.visualstudio.com/items?itemName=notskm.clang-tidy>
-
-Add to your settings.json:
-
-    "clang-tidy.checks": [
-        "bugprone-",
-        "cert-",
-        "clang-analyzer-",
-        "cppcoreguidelines-",
-        "-cppcoreguidelines-pro-type-vararg",
-        "-cppcoreguidelines-pro-bounds-array-to-pointer-decay",
-        "llvm-",
-        "-llvm-include-order",
-        "misc-",
-        "modernize-",
-        "-modernize-use-trailing-return-type",
-        "-modernize-concat-nested-namespaces",
-        "performance-",
-        "readability-*"
-        ],
-
-        "clang-tidy.compilerArgs" : [ "-std=c++11" ], 
-        "clang-tidy.buildPath" : "build/", 
-        "clang-tidy.executable" : "clang-tidy"    
-
-Enable/disable the checks you need accordingly. Also configure your compiler arguments.
-
-It's also possible to use the `.clang-tidy` file (in the workspace root) to easily configure the settings for clang-tidy.
-
-To avoid linting of "special" code:
-
-    some_code_that_should_be_excluded_from_linting(); // NOLINT or /* NOLINT */
-
-For details on clang-tidy, see [https://clang.llvm.org/extra/clang-tidy/](https://clang.llvm.org/extra/clang-tidy/).
-
----
+To use on-the-fly static analysis during development, see the [Static analysis](doc/StaticAnalysis.md) documentation.
 
 ## Code cleanup
 
@@ -282,6 +232,7 @@ A sample `.clang-format` file could be found in the project root.
 
 ## Other nice extensions
 
+There are several, generally supporting extensions that leverage your effort in various ways.
 See the [Extension](doc/Extensions.md) documentation for details on other supportive extensions that can enhance your development workflow.
 
 ---

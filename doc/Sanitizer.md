@@ -102,4 +102,4 @@ The thread sanitizer helps you to detect data races.
           CMAKE_CXX_FLAGS: "-fsanitize=thread"
           CMAKE_C_FLAGS: "-fsanitize=thread"
 
-[https://clang.llvm.org/docs/ThreadSanitizer.html](https://clang.llvm.org/docs/ThreadSanitizer.html)
+Fore more details see: [https://clang.llvm.org/docs/ThreadSanitizer.html](https://clang.llvm.org/docs/ThreadSanitizer.html).
