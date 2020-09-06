@@ -7,5 +7,7 @@
 
     "clang-tidy.compilerArgs" : [ "-std=c++11" ], 
     "clang-tidy.buildPath" : "build/", // needs to find the compile_commands.json
-    "clang-tidy.executable" : "clang-tidy"    
+    "clang-tidy.executable" : "clang-tidy", 
+
+    "testExplorer.codeLens": true
 }

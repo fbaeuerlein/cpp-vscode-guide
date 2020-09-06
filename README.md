@@ -273,6 +273,8 @@ The [Test Explorer UI](https://marketplace.visualstudio.com/items?itemName=hbenl
 
 To support your used test framework, an according test adapter has to be installed. I found the C++ TestMate extension pretty valuable for that.
 
+The test section can be found in the Activity Bar and is represented by a test tube icon.
+
 ---
 
 ### C++ TestMate
@@ -282,6 +284,11 @@ The [C++ TestMate Extension](https://marketplace.visualstudio.com/items?itemName
 ![https://raw.githubusercontent.com/matepek/vscode-catch2-test-adapter/master/resources/Screenshot_2019-05-28.png](https://raw.githubusercontent.com/matepek/vscode-catch2-test-adapter/master/resources/Screenshot_2019-05-28.png)
 
 A very nice feature is the debugging capability of the extension. If a certain test fails, you just have to navigate to the desired test case and click at the `Debug this test` button. So you can easily debug the single tests without the need of creating a separate launch configuration.
+
+When activating CodeLens within `settings.json` by adding `"testExplorer.codeLens": true`, you get a very nice annotation on succeeding and failing tests. Also selection and running out of the editor itself is possible with it.
+
+![CodeLens on Testmate](images/TestMateCodeLens.png)
+
 
 If you need special settings for a test you can also customize this (e.g. certain random seed, other args, etc.).
 

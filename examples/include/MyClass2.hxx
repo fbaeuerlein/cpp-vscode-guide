@@ -24,7 +24,7 @@ class MyClass2
 
     ~MyClass2() = default;
 
-    auto value() -> int const;
+    auto value() const -> int;
 
   private:
     MyClass1<int> * _some_class;
