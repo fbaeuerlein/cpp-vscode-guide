@@ -123,9 +123,7 @@ More about the integration of the Clang sanitizers could be found in the [Clang 
 
 # 12. GitHub integration
 
-For personal development, GitHub is a good resource for projects and a good point to store your project at. So the GitHub plugin (found [here](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github)) supports you working with issues and pull requests.
-
-For more details of the plugin see [https://code.visualstudio.com/docs/editor/github](https://code.visualstudio.com/docs/editor/github).
+An overview how to use GitHub together with VS Could be found within the [GitHub integration documentation](doc/GitHub.md).
 
 ---
 
