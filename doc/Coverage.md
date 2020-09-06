@@ -9,9 +9,13 @@
 - [Automate coverage extraction with tasks](#automate-coverage-extraction-with-tasks)
 - [Extension](#extension)
 
+---
+
 ## Overview
 
 This documentation shows how to configure and evaluate the code coverage of your application under Linux with lcov.
+
+---
 
 ## Setup coverage for CMake builds
 
@@ -52,6 +56,8 @@ After changing the `cmake-variants.yaml`, you can choose a build variant (click 
 ![CMake variants selection](../images/cmake-variants.png)
 
 More about `cmake-variants.yaml` in the [About CMake variants](../README.md#about-cmake-variants) section.
+
+---
 
 ## Using lcov to generate coverage info file
 

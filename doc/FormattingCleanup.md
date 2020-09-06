@@ -1,11 +1,13 @@
 
-# Code coverage <!-- omit in toc -->
+# Formatting & cleanup integration <!-- omit in toc -->
 
 ## Table of contents <!-- omit in toc -->
 
 - [Overview](#overview)
 - [clang-format](#clang-format)
 - [Include what you use (IWYU)](#include-what-you-use-iwyu)
+
+---
 
 ## Overview
 

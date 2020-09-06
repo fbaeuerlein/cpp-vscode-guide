@@ -1,9 +1,17 @@
 
-# Code coverage <!-- omit in toc -->
+# CMake integration & extension <!-- omit in toc -->
 
 ## Table of contents <!-- omit in toc -->
 
 - [Overview](#overview)
+- [Microsoft CMake Tools](#microsoft-cmake-tools)
+- [Support for writing CMake files](#support-for-writing-cmake-files)
+
+---
+
+## Overview
+
+Tools that support you managing and maintaining CMake projects with VS Code.
 
 ---
 

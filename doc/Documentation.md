@@ -1,11 +1,13 @@
 
-# Code coverage <!-- omit in toc -->
+# Documentation with VS Code <!-- omit in toc -->
 
 ## Table of contents <!-- omit in toc -->
 
 - [Overview](#overview)
 - [doxygen](#doxygen)
 - [Markdown](#markdown)
+
+---
 
 ## Overview
 

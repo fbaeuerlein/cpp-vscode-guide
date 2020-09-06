@@ -7,6 +7,8 @@
 - [Test Explorer UI](#test-explorer-ui)
 - [C++ TestMate](#c-testmate)
 
+---
+
 ## Overview
 
 Some information about general testing with VS Code and testing extensions.

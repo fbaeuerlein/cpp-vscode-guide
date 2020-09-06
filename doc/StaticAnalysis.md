@@ -6,9 +6,13 @@
 - [Overview](#overview)
 - [clang-tidy](#clang-tidy)
 
+---
+
 ## Overview
 
 This documentation shows how to configure and run VS Code to support you with static analysis.
+
+---
 
 ## clang-tidy
 

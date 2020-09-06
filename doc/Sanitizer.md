@@ -4,12 +4,21 @@
 ## Table of contents <!-- omit in toc -->
 
 - [Overview](#overview)
+- [General integration with variants](#general-integration-with-variants)
 - [Address Sanitizer](#address-sanitizer)
 - [Memory Sanitizer](#memory-sanitizer)
 - [UndefinedBehavior Sanitizer](#undefinedbehavior-sanitizer)
 - [Thread Sanitizer](#thread-sanitizer)
 
+---
+
 ## Overview
+
+This section describes how to integrate the Clang sanitizers in your build process with VS Code.
+
+---
+
+## General integration with variants
 
 With the use of `cmake-variants.yaml` it's pretty easy to add different sanitizer options to your build process.
 

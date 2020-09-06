@@ -10,9 +10,13 @@
 - [Task Explorer](#task-explorer)
 - [Markdown lint](#markdown-lint)
 
+---
+
 ## Overview
 
 Some other helpful (not necessarily C/C++ related) extensions to support developers.
+
+---
 
 ## Bracket Pair Colorizer
 

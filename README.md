@@ -6,12 +6,9 @@ A small guide for useful extensions to unleash the power of Visual Studio Code f
 
 - [About the project](#about-the-project)
 - [C/C++ Extension](#cc-extension)
-- [GitHub integration](#github-integration)
 - [CMake](#cmake)
 - [Testing](#testing)
 - [Docker](#docker)
-  - [Docker extension](#docker-extension)
-  - [VS Code Remote Containers](#vs-code-remote-containers)
 - [Documentation](#documentation)
 - [Remote development](#remote-development)
   - [Remote SSH Extension](#remote-ssh-extension)
@@ -19,6 +16,7 @@ A small guide for useful extensions to unleash the power of Visual Studio Code f
 - [Code formatting & cleanup](#code-formatting--cleanup)
 - [Code Coverage](#code-coverage)
 - [Integrate Clang sanitizers](#integrate-clang-sanitizers)
+- [GitHub integration](#github-integration)
 - [Other nice extensions](#other-nice-extensions)
 - [Some shortcuts and features](#some-shortcuts-and-features)
   - [Official VS Code shortcut cheat sheet](#official-vs-code-shortcut-cheat-sheet)
@@ -49,14 +47,6 @@ An official overview of editing C++ with VS Code could be found at [https://code
 
 ---
 
-## GitHub integration
-
-For personal development, GitHub is a good resource for projects and a good point to store your project at. So the GitHub plugin (found [here](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github)) supports you working with issues and pull requests.
-
-For more details of the plugin see [https://code.visualstudio.com/docs/editor/github](https://code.visualstudio.com/docs/editor/github).
-
----
-
 ## CMake
 
 How to manage CMake projects with VS Code could be found in the [CMake](doc/CMake.md) section.
@@ -71,27 +61,7 @@ VS Code has some nice extensions to handle testing very comfortable. See the [Te
 
 ## Docker
 
-### Docker extension
-
-The [docker extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker) gives you a good insight on the current images on the system and helps you to build and manage containers.
-
-![https://raw.githubusercontent.com/microsoft/vscode-docker/master/resources/readme/overview.gif](https://raw.githubusercontent.com/microsoft/vscode-docker/master/resources/readme/overview.gif)
-
-For installing docker, see [https://docs.docker.com/get-docker/](https://docs.docker.com/get-docker/).
-
----
-
-### VS Code Remote Containers
-
-Developing in a container! The [VS Code Remote Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) lets you use a docker container as development environment. No more installing toolchains and dependencies! Simply write a Dockerfile and share the development environment with others and use it simply with a click out of VS Code.
-
-<!-- ![Remote Containers](https://microsoft.github.io/vscode-remote-release/images/remote-containers-readme.gif) -->
-
-After installation map your development folder via the command palette (`Ctrl+Shift+P`), selecting **Remote-Containers: Open Folder in Container** to a specified docker container.
-
-See the `.devcontainer/devcontainer.json` settings file for details. It refers to the container description in `examples/Dockerfile`.
-
-For more details, see [https://github.com/Microsoft/vscode-dev-containers](https://github.com/Microsoft/vscode-dev-containers).
+The [docker](doc/Docker.md) section describes how to use extensions for building, managing and running containers from VS Code.
 
 ---
 
@@ -132,6 +102,14 @@ To setup your CMake builds with coverage instrumentation and evaluate the covera
 ## Integrate Clang sanitizers
 
 More about the integration of the Clang sanitizers could be found in the [Clang sanitizer](doc/Sanitizer.md) documentation.
+
+---
+
+## GitHub integration
+
+For personal development, GitHub is a good resource for projects and a good point to store your project at. So the GitHub plugin (found [here](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github)) supports you working with issues and pull requests.
+
+For more details of the plugin see [https://code.visualstudio.com/docs/editor/github](https://code.visualstudio.com/docs/editor/github).
 
 ---
 
