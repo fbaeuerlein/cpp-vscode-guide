@@ -5,7 +5,10 @@ A small guide for useful extensions to unleash the power of Visual Studio Code f
 ## Table of contents <!-- omit in toc -->
 
 - [About the project](#about-the-project)
-- [C/C++ Extension](#cc-extension)
+- [Getting started](#getting-started)
+  - [Installing VS Code](#installing-vs-code)
+  - [C/C++ Extension](#cc-extension)
+  - [Additional references](#additional-references)
 - [CMake](#cmake)
 - [Testing](#testing)
 - [Docker](#docker)
@@ -37,13 +40,26 @@ Mostly i'm using CMake and Linux. So the main focus will be on this combination.
 
 ---
 
-## C/C++ Extension
+## Getting started
 
-First of all you need the official Microsoft C/C++ extension found [here](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools).
+### Installing VS Code
 
-A general introduction to develop C/C++ with VS Code under Linux could be found [here](https://code.visualstudio.com/docs/cpp/config-linux).
+You can get the latest VS Code version at [https://code.visualstudio.com/](https://code.visualstudio.com/). Simply download and install the package type that's supported by system/distribution.
 
-An official overview of editing C++ with VS Code could be found at [https://code.visualstudio.com/docs/cpp/cpp-ide](https://code.visualstudio.com/docs/cpp/cpp-ide).
+A detailed description how to install it under linux could be found [here](https://code.visualstudio.com/docs/setup/linux).
+
+---
+
+### C/C++ Extension
+
+To make VS Code familiar with C++, i.e. language support, debugging, etc., you need the official Microsoft C/C++ extension found at the [marketplace](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools). Simply install it via the extension panel from the activity bar.
+
+---
+
+### Additional references
+
+- An official overview of editing C++ with VS Code: [https://code.visualstudio.com/docs/cpp/cpp-ide](https://code.visualstudio.com/docs/cpp/cpp-ide)
+- A general introduction to develop C/C++ with VS Code under Linux: [https://code.visualstudio.com/docs/cpp/config-linux](https://code.visualstudio.com/docs/cpp/config-linux)
 
 ---
 
