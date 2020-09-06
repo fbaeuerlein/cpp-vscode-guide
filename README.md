@@ -2,37 +2,37 @@
 
 A small guide for useful extensions to unleash the power of Visual Studio Code for C/C++ development. And damn, it's becoming better and better!
 
-## Table of contents <!-- omit in toc -->
+# Table of contents <!-- omit in toc -->
 
-- [About the project](#about-the-project)
-- [Getting started](#getting-started)
-  - [Installing VS Code](#installing-vs-code)
-  - [C/C++ Extension](#cc-extension)
-  - [Additional references](#additional-references)
-- [CMake](#cmake)
-- [Testing](#testing)
-- [Docker](#docker)
-- [Documentation](#documentation)
-- [Remote development](#remote-development)
-  - [Remote SSH Extension](#remote-ssh-extension)
-- [Static analysis](#static-analysis)
-- [Code formatting & cleanup](#code-formatting--cleanup)
-- [Code Coverage](#code-coverage)
-- [Integrate Clang sanitizers](#integrate-clang-sanitizers)
-- [GitHub integration](#github-integration)
-- [Other nice extensions](#other-nice-extensions)
-- [Some shortcuts and features](#some-shortcuts-and-features)
-  - [Official VS Code shortcut cheat sheet](#official-vs-code-shortcut-cheat-sheet)
-  - [Column selection mode](#column-selection-mode)
-- [About CMake variants](#about-cmake-variants)
-- [References](#references)
-  - [General](#general)
-  - [CMake](#cmake-1)
-  - [Docker](#docker-1)
+- [1. About the project](#1-about-the-project)
+- [2. Getting started](#2-getting-started)
+  - [2.1. Installing VS Code](#21-installing-vs-code)
+  - [2.2. C/C++ Extension](#22-cc-extension)
+  - [2.3. Additional references](#23-additional-references)
+- [3. CMake](#3-cmake)
+- [4. Testing](#4-testing)
+- [5. Docker](#5-docker)
+- [6. Documentation](#6-documentation)
+- [7. Remote development](#7-remote-development)
+  - [7.1. Remote SSH Extension](#71-remote-ssh-extension)
+- [8. Static analysis](#8-static-analysis)
+- [9. Code formatting & cleanup](#9-code-formatting--cleanup)
+- [10. Code Coverage](#10-code-coverage)
+- [11. Integrate Clang sanitizers](#11-integrate-clang-sanitizers)
+- [12. GitHub integration](#12-github-integration)
+- [13. Other nice extensions](#13-other-nice-extensions)
+- [14. Some shortcuts and features](#14-some-shortcuts-and-features)
+  - [14.1. Official VS Code shortcut cheat sheet](#141-official-vs-code-shortcut-cheat-sheet)
+  - [14.2. Column selection mode](#142-column-selection-mode)
+- [15. About CMake variants](#15-about-cmake-variants)
+- [16. References](#16-references)
+  - [16.1. General](#161-general)
+  - [16.2. CMake](#162-cmake)
+  - [16.3. Docker](#163-docker)
 
 ---
 
-## About the project
+# 1. About the project
 
 This project should give an overview over some extensions and hints for C/C++ development with VS Code. There are a lot extensions around that really improve working with VCS. I want to show which of these are really valuable and give some tutorial how to use/integrate them.
 
@@ -40,9 +40,9 @@ Mostly i'm using CMake and Linux. So the main focus will be on this combination.
 
 ---
 
-## Getting started
+# 2. Getting started
 
-### Installing VS Code
+## 2.1. Installing VS Code
 
 You can get the latest VS Code version at [https://code.visualstudio.com/](https://code.visualstudio.com/). Simply download and install the package type that's supported by system/distribution.
 
@@ -50,46 +50,46 @@ A detailed description how to install it under linux could be found [here](https
 
 ---
 
-### C/C++ Extension
+## 2.2. C/C++ Extension
 
 To make VS Code familiar with C++, i.e. language support, debugging, etc., you need the official Microsoft C/C++ extension found at the [marketplace](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools). Simply install it via the extension panel from the activity bar.
 
 ---
 
-### Additional references
+## 2.3. Additional references
 
 - An official overview of editing C++ with VS Code: [https://code.visualstudio.com/docs/cpp/cpp-ide](https://code.visualstudio.com/docs/cpp/cpp-ide)
 - A general introduction to develop C/C++ with VS Code under Linux: [https://code.visualstudio.com/docs/cpp/config-linux](https://code.visualstudio.com/docs/cpp/config-linux)
 
 ---
 
-## CMake
+# 3. CMake
 
 How to manage CMake projects with VS Code could be found in the [CMake](doc/CMake.md) section.
 
 ---
 
-## Testing
+# 4. Testing
 
 VS Code has some nice extensions to handle testing very comfortable. See the [Testing](doc/Testing.md) documentation for details.
 
 ---
 
-## Docker
+# 5. Docker
 
 The [docker](doc/Docker.md) section describes how to use extensions for building, managing and running containers from VS Code.
 
 ---
 
-## Documentation
+# 6. Documentation
 
 Some extensions can greatly enhance your documentation capabilities. See the [documentation](doc/Documentation.md) section for details.
 
 ---
 
-## Remote development
+# 7. Remote development
 
-### Remote SSH Extension
+## 7.1. Remote SSH Extension
 
 If you are developing for remotely connected devices (e.g. RPi), the [Remote - SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh) extension saves a lot of time. It enables you to work with VS Code like you are used to work locally. The communication is done via SSH. So also autologin via certificates is possible.  
 
@@ -97,31 +97,31 @@ If you are developing for remotely connected devices (e.g. RPi), the [Remote - S
 
 ---
 
-## Static analysis
+# 8. Static analysis
 
 To use on-the-fly static analysis during development, see the [Static analysis](doc/StaticAnalysis.md) documentation.
 
 ---
 
-## Code formatting & cleanup
+# 9. Code formatting & cleanup
 
 The [Code formatting & cleanup](doc/FormattingCleanup.md) documentation shows some tools to do general automated cleanup and formatting of you're code.
 
 ---
 
-## Code Coverage
+# 10. Code Coverage
 
 To setup your CMake builds with coverage instrumentation and evaluate the coverage results, see the [coverage](doc/Coverage.md) documentation.
 
 ---
 
-## Integrate Clang sanitizers
+# 11. Integrate Clang sanitizers
 
 More about the integration of the Clang sanitizers could be found in the [Clang sanitizer](doc/Sanitizer.md) documentation.
 
 ---
 
-## GitHub integration
+# 12. GitHub integration
 
 For personal development, GitHub is a good resource for projects and a good point to store your project at. So the GitHub plugin (found [here](https://marketplace.visualstudio.com/items?itemName=GitHub.vscode-pull-request-github)) supports you working with issues and pull requests.
 
@@ -129,28 +129,28 @@ For more details of the plugin see [https://code.visualstudio.com/docs/editor/gi
 
 ---
 
-## Other nice extensions
+# 13. Other nice extensions
 
 There are several, generally supporting extensions that leverage your effort in various ways.
 See the [Extension](doc/Extensions.md) documentation for details on other supportive extensions that can enhance your development workflow.
 
 ---
 
-## Some shortcuts and features
+# 14. Some shortcuts and features
 
-### Official VS Code shortcut cheat sheet
+## 14.1. Official VS Code shortcut cheat sheet
 
 The basic VS Code shortcuts can be found [here](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)
 
 ---
 
-### Column selection mode
+## 14.2. Column selection mode
 
 That is a really cool feature, especially for refactoring/renaming tasks. So don't miss to use it with opening the command palette (`Ctrl+Shift+P`) and run **Toggle column selection mode**.
 
 ---
 
-## About CMake variants
+# 15. About CMake variants
 
 The `cmake-variants.yaml` is a nice tool to setup different compiler instrumentations and generally changing the flags. But there's one problem currently. If you use the same CMake definitions in different combined variants, only the last one will be taken. E.g. if you enable coverage and the address sanitizer, only one of it will work because they share the same `CMAKE_CXX_FLAGS` definition.
 
@@ -158,19 +158,19 @@ Another drawback is the use of the settings within a CI pipeline. So using an ad
 
 ---
 
-## References
+# 16. References
 
-### General
+## 16.1. General
 
 - More on VS Code, C/C++ & Linux: [https://code.visualstudio.com/docs/cpp/config-linux](https://code.visualstudio.com/docs/cpp/config-linux)
 - Overview of C++ editing in VS Code: [https://code.visualstudio.com/docs/cpp/cpp-ide](https://code.visualstudio.com/docs/cpp/cpp-ide)
 
-### CMake
+## 16.2. CMake
 
 - More on CMake variants and CMake extension: [https://code.visualstudio.com/docs/cpp/cmake-linux#_select-a-variant](https://code.visualstudio.com/docs/cpp/cmake-linux#_select-a-variantctrl)
 - CTest: [https://cmake.org/cmake/help/latest/manual/ctest.1.html](https://cmake.org/cmake/help/latest/manual/ctest.1.html)
 
-### Docker
+## 16.3. Docker
 
 - Installing docker: [https://docs.docker.com/get-docker/](https://docs.docker.com/get-docker/)
 - Working with containers in VS Code: [https://code.visualstudio.com/docs/containers/overview](https://code.visualstudio.com/docs/containers/overview)
