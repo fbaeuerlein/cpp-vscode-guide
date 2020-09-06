@@ -7,10 +7,7 @@ A small guide for useful extensions to unleash the power of Visual Studio Code f
 - [About the project](#about-the-project)
 - [C/C++ Extension](#cc-extension)
 - [GitHub integration](#github-integration)
-- [Build system](#build-system)
-  - [CMake](#cmake)
-    - [Microsoft CMake Tools](#microsoft-cmake-tools)
-    - [Support for writing CMake files](#support-for-writing-cmake-files)
+- [CMake](#cmake)
 - [Testing](#testing)
 - [Docker](#docker)
   - [Docker extension](#docker-extension)
@@ -60,29 +57,9 @@ For more details of the plugin see [https://code.visualstudio.com/docs/editor/gi
 
 ---
 
-## Build system
+## CMake
 
-### CMake
-
-Some nice tools and extension to help you with CMake projects.
-
----
-
-#### Microsoft CMake Tools
-
-To interact with CMake, the CMake Tools extension is there. It could be found [here](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools).
-
-Especially the the CMake Quickstart feature, usable with the command palette (`Ctrl+Shift+P`) running **CMake: Quickstart**, is pretty nice to starting coding right away.
-
-For details on how to setup, configure and build projects, see [https://github.com/microsoft/vscode-cmake-tools/blob/develop/docs/README.md](https://github.com/microsoft/vscode-cmake-tools/blob/develop/docs/README.md)
-
----
-
-#### Support for writing CMake files
-
-For support of writing CMakeLists files, the [CMake extension](https://marketplace.visualstudio.com/items?itemName=twxs.cmake) is pretty useful.
-
-![twxs.cmake in action](https://raw.githubusercontent.com/twxs/vs.language.cmake/master/images/cmake1.gif)
+How to manage CMake projects with VS Code could be found in the [CMake](doc/CMake.md) section.
 
 ---
 

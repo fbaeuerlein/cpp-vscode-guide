@@ -11,6 +11,8 @@
 
 This document shows how to enhance your documentation capabilities with VS Code.
 
+---
+
 ## doxygen
 
 Adding doxygen language support could be done by installing the [doxygen extension](https://marketplace.visualstudio.com/items?itemName=bbenoist.Doxygen).
