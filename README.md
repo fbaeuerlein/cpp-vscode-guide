@@ -1,6 +1,6 @@
 # cpp-vscode-guide <!-- omit in toc -->
-A small guide for useful extensions to unleash the power of Visual Studio Code for C/C++ development. And damn, it's becoming better and better!
 
+A small guide for useful extensions to unleash the power of Visual Studio Code for C/C++ development. And damn, it's becoming better and better!
 
 ## Table of contents <!-- omit in toc -->
 
@@ -11,6 +11,7 @@ A small guide for useful extensions to unleash the power of Visual Studio Code f
   - [CMake](#cmake)
     - [Microsoft CMake Tools](#microsoft-cmake-tools)
     - [Support for writing CMake files](#support-for-writing-cmake-files)
+- [Testing](#testing)
 - [Docker](#docker)
   - [Docker extension](#docker-extension)
   - [VS Code Remote Containers](#vs-code-remote-containers)
@@ -23,7 +24,6 @@ A small guide for useful extensions to unleash the power of Visual Studio Code f
   - [clang-tidy](#clang-tidy)
 - [Code cleanup](#code-cleanup)
   - [Include what you use (IWYU)](#include-what-you-use-iwyu)
-- [Testing](#testing)
 - [Code Coverage](#code-coverage)
   - [Extension](#extension)
   - [Setup coverage for CMake builds](#setup-coverage-for-cmake-builds)
@@ -36,12 +36,7 @@ A small guide for useful extensions to unleash the power of Visual Studio Code f
   - [Thread Sanitizer](#thread-sanitizer)
 - [Formatting](#formatting)
   - [clang-format](#clang-format)
-- [Other nice little extensions](#other-nice-little-extensions)
-  - [Bracket Pair Colorizer](#bracket-pair-colorizer)
-  - [Todo Tree](#todo-tree)
-  - [YAML](#yaml)
-  - [Code Spell Checker](#code-spell-checker)
-  - [Task Explorer](#task-explorer)
+- [Other nice extensions](#other-nice-extensions)
 - [Some shortcuts and features](#some-shortcuts-and-features)
   - [Official VS Code shortcut cheat sheet](#official-vs-code-shortcut-cheat-sheet)
   - [Column selection mode](#column-selection-mode)
@@ -105,6 +100,12 @@ For support of writing CMakeLists files, the [CMake extension](https://marketpla
 
 ---
 
+## [Testing](doc/Testing.md)
+
+See the [Testing](doc/Testing.md) documentation for details.
+
+---
+
 ## Docker
 
 ### Docker extension
@@ -119,7 +120,7 @@ For installing docker, see [https://docs.docker.com/get-docker/](https://docs.do
 
 ### VS Code Remote Containers
 
-Developing in a container! The [VS Code Remote Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) lets you use a docker container as development environment. No more installing toolchains and dependencies! Simply write a Dockerfile and share the development environment with others and use it simply with a click out of VS Code. 
+Developing in a container! The [VS Code Remote Containers extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) lets you use a docker container as development environment. No more installing toolchains and dependencies! Simply write a Dockerfile and share the development environment with others and use it simply with a click out of VS Code.
 
 <!-- ![Remote Containers](https://microsoft.github.io/vscode-remote-release/images/remote-containers-readme.gif) -->
 
@@ -133,7 +134,7 @@ For more details, see [https://github.com/Microsoft/vscode-dev-containers](https
 
 ## Documentation
 
-### doxygen 
+### doxygen
 
 Adding doxygen language support could be done by installing the [doxygen extension](https://marketplace.visualstudio.com/items?itemName=bbenoist.Doxygen).
 
@@ -141,14 +142,14 @@ To support you with automated comment templates in your code, the [Doxygen Docum
 
 ![Doxygen in action](images/doxygen.png)
 
-To install doxygen: 
+To install doxygen:
 
     apt install doxygen
 
 For enhanced visualization in doxygen, install graphviz.
 
     apt install graphviz
-    
+
 If you like easy visualization of customizable sequence charts, maybe mscgen is the right thing for you. You can install it with:
 
     apt install mscgen
@@ -161,10 +162,9 @@ Simply install the extension, add a `Doxyfile` to your workspace folder (e.g. wi
 
 Finally you can start doxygen via the command palette (`Ctrl+Shift+P`), selecting **Generate Doxygen generation**.
 
-
 ### Markdown
 
-There are several markdown related extensions available. But currently a very nice one is [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one#table-of-contents). It supports shortcuts, automated creation of TOCs and many more. 
+There are several markdown related extensions available. But currently a very nice one is [Markdown All in One](https://marketplace.visualstudio.com/items?itemName=yzhang.markdown-all-in-one#table-of-contents). It supports shortcuts, automated creation of TOCs and many more.
 
 ---
 
@@ -188,14 +188,14 @@ If you are developing for remotely connected devices (e.g. RPi), the [Remote - S
 
 The curly underlined statement was discovered by clang-tidy to be problematic (assign to nullptr).
 
-Installing clang-tidy: 
+Installing clang-tidy:
 
     apt install clang-tidy
 
 Install the following extension for VS Code
 
-https://marketplace.visualstudio.com/items?itemName=notskm.clang-tidy
-    
+<https://marketplace.visualstudio.com/items?itemName=notskm.clang-tidy>
+
 Add to your settings.json:
 
     "clang-tidy.checks": [
@@ -221,7 +221,7 @@ Add to your settings.json:
 
 Enable/disable the checks you need accordingly. Also configure your compiler arguments.
 
-It's also possible to use the `.clang-tidy` file (in the workspace root) to easily configure the settings for clang-tidy. 
+It's also possible to use the `.clang-tidy` file (in the workspace root) to easily configure the settings for clang-tidy.
 
 To avoid linting of "special" code:
 
@@ -237,13 +237,13 @@ This section should show some tools to do general code cleanup.
 
 ### Include what you use (IWYU)
 
-Include what you use helps you to reduce inclusions of header files and thus can help you to speed up compilation time and also can lead to fewer recompiles. 
+Include what you use helps you to reduce inclusions of header files and thus can help you to speed up compilation time and also can lead to fewer recompiles.
 
-To use it under Linux (Ubuntu/Debian) just install by: 
+To use it under Linux (Ubuntu/Debian) just install by:
 
     apt install iwyu
 
-To run it for the currently opened file from VS Code, install the [Include what you use extension](https://marketplace.visualstudio.com/items?itemName=pokowaka.pokowaka-iwyu). 
+To run it for the currently opened file from VS Code, install the [Include what you use extension](https://marketplace.visualstudio.com/items?itemName=pokowaka.pokowaka-iwyu).
 
 Initially you have to add at least the following entries to you `settings.json`:
 
@@ -252,20 +252,11 @@ Initially you have to add at least the following entries to you `settings.json`:
 
 <!-- TODO: extend configuration -->
 
-
 ![https://raw.githubusercontent.com/pokowaka/vscode-iwyu/master/images/small_demo.gif](https://raw.githubusercontent.com/pokowaka/vscode-iwyu/master/images/small_demo.gif)
-
 
 For more details see [https://github.com/include-what-you-use/include-what-you-use](https://github.com/include-what-you-use/include-what-you-use)
 
-Especially when you want to keep certain includes, this [site](https://github.com/include-what-you-use/include-what-you-use/blob/master/docs/IWYUPragmas.md) gives you an overview of pragmas that turn off IWYU. 
-
-
----
-
-## Testing
-
-See the [Testing](doc/Testing.md) documentation.
+Especially when you want to keep certain includes, this [site](https://github.com/include-what-you-use/include-what-you-use/blob/master/docs/IWYUPragmas.md) gives you an overview of pragmas that turn off IWYU.
 
 ---
 
@@ -279,7 +270,7 @@ See the [Testing](doc/Testing.md) documentation.
 
 Compile your application/tests with `-fprofile-arcs -ftest-coverage`. For linking the `--coverage` flag is needed.
 
-An easy way to propagate these flags to CMake ist the use of the `.vscode/cmake-variants.yaml`. 
+An easy way to propagate these flags to CMake ist the use of the `.vscode/cmake-variants.yaml`.
 There you can set different variants of your toolchain. Below you can see an example for adding coverage instrumentation with compiler flags:
 
     buildType:
@@ -320,28 +311,28 @@ More about `cmake-variants.yaml` in the [About CMake variants](#about-cmake-vari
 Install lcov:
 
     apt install lcov
-    
+
 Running `lcov` in your build directory **before** running the tests (not necessary as far as i saw):
 
     lcov --no-external --capture --initial --directory .. --output-file lcov.info
-    
+
 Running `lcov` in your build directory **after** running the tests:
 
     lcov --no-external --capture --directory .. --output-file lcov.info
 
-To filter out unwanted results (e.g. STL headers and externals), use: 
+To filter out unwanted results (e.g. STL headers and externals), use:
 
     lcov --remove lcov.info '/usr/*' '*/googletest/*' --output-file lcov.info
-    
-Add path to your info file in VS Code `settings.json` 
-    
+
+Add path to your info file in VS Code `settings.json`
+
     "markiscodecoverage.searchCriteria": "<build path>/lcov.info"
-    
+
 ### Automate coverage extraction with tasks
 
-A powerful tool, to automate the commands that have to be executed for coverage generation and extraction into HTML, are tasks. 
+A powerful tool, to automate the commands that have to be executed for coverage generation and extraction into HTML, are tasks.
 
-Some sample how to run lcov and filter unwanted results afterwards. 
+Some sample how to run lcov and filter unwanted results afterwards.
 
     {
         "version": "2.0.0",
@@ -363,15 +354,15 @@ Some sample how to run lcov and filter unwanted results afterwards.
         }] 
     }
 
-See the `.vscode/tasks.json` for a more detailed example that runs lcov, filters the result, runs genhtml to generate a HTML report and finally starts firefox to display it. 
-The build/scan folders and the browser should be configured to match your setup. 
+See the `.vscode/tasks.json` for a more detailed example that runs lcov, filters the result, runs genhtml to generate a HTML report and finally starts firefox to display it.
+The build/scan folders and the browser should be configured to match your setup.
 
 To run the tasks, open the command palette (`Ctrl+Shift+P`) and run **Tasks: Run Task**. A nice alternative to that is the use of an extension like [Task Explorer](https://marketplace.visualstudio.com/items?itemName=spmeesseman.vscode-taskexplorer) that helps you to show and manage the tasks.
 
-So a typical workflow could be: 
-- Run your tests with coverage instrumentation (see [Coverage with CMake builds](#setup-coverage-for-cmake-builds))
-- Run lcov & genhtml & open report in HTML 
+So a typical workflow could be:
 
+- Run your tests with coverage instrumentation (see [Coverage with CMake builds](#setup-coverage-for-cmake-builds))
+- Run lcov & genhtml & open report in HTML
 
 <!-- TODO: More about tasks in Tasks section -->
 
@@ -379,10 +370,9 @@ So a typical workflow could be:
 
 ## Integrate sanitizers
 
-With the use of `cmake-variants.yaml` it's pretty easy to add different sanitizer options to your build process. 
+With the use of `cmake-variants.yaml` it's pretty easy to add different sanitizer options to your build process.
 
 Initially you can add a sanitizer section to your `cmake-variants.yaml` that contains a no-sanitizer configuration:
-
 
     sanitizer:
       default: NoSan # no sanitizer
@@ -420,7 +410,7 @@ The following sections are utilizing the clang sanitizers. Some of them also ava
 
 ### Memory Sanitizer
 
-The memory sanitizer helps you to find uninitialized reads. 
+The memory sanitizer helps you to find uninitialized reads.
 
     ...
     choices: 
@@ -438,7 +428,7 @@ For more details see [https://clang.llvm.org/docs/MemorySanitizer.html](https://
 
 ### UndefinedBehavior Sanitizer
 
-The undefined behavior sanitizer scans your code for occurrence of undefined behavior. 
+The undefined behavior sanitizer scans your code for occurrence of undefined behavior.
 
     ...
     choices: 
@@ -451,7 +441,7 @@ The undefined behavior sanitizer scans your code for occurrence of undefined beh
           CMAKE_C_FLAGS: "-fsanitize=undefined"
           CMAKE_EXE_LINKER_FLAGS: "-fsanitize=undefined"
 
-For more details see [https://clang.llvm.org/docs/UndefinedBehaviorSanitizer.html](https://clang.llvm.org/docs/UndefinedBehaviorSanitizer.html). 
+For more details see [https://clang.llvm.org/docs/UndefinedBehaviorSanitizer.html](https://clang.llvm.org/docs/UndefinedBehaviorSanitizer.html).
 
 For available checks see [https://clang.llvm.org/docs/UndefinedBehaviorSanitizer.html#ubsan-checks](https://clang.llvm.org/docs/UndefinedBehaviorSanitizer.html#ubsan-checks).
 
@@ -475,65 +465,25 @@ The thread sanitizer helps you to detect data races.
 
 ---
 
-
 ## Formatting
 
 ### clang-format
 
-Installing clang-format: 
+Installing clang-format:
 
     apt install clang-format
 
 To use clang-format within VS Code, you need to install the [clang-format extension](https://marketplace.visualstudio.com/items?itemName=xaver.clang-format) and place a `.clang-format` within your workspace root directory.
 
-To run the formatter, press `Ctrl+Shift+I`. Maybe you have to choose the right formatter on first usage. 
+To run the formatter, press `Ctrl+Shift+I`. Maybe you have to choose the right formatter on first usage.
 
-A sample `.clang-format` file could be found in the project root. 
-
----
-
-## Other nice little extensions
-
-### Bracket Pair Colorizer
-
-[Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer) adds different colors to brackets, so nested brackets could be distinguished much better.
-
-![Bracket Pair Colorizer](https://raw.githubusercontent.com/CoenraadS/BracketPair/master/images/example.png)
+A sample `.clang-format` file could be found in the project root.
 
 ---
 
-### Todo Tree
-[Todo Tree](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree) shows all the todo tag within your files in a tree structure so you can easily have an eye on them. 
-<!-- **TODO:** remove old image -->
+## Other nice extensions
 
-![TodoTree](https://raw.githubusercontent.com/Gruntfuggly/todo-tree/master/resources/screenshot.png)
-
----
-
-### YAML
-
-The [RedHat YAML Extension](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml) helps you writing YAML files with formatting and checking the file content.
-
-![RedHat YAML Extension](https://raw.githubusercontent.com/redhat-developer/vscode-yaml/master/images/demo.gif)
-
----
-
-### Code Spell Checker 
-
-[Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) helps you to catch common spelling mistakes. It supports different dictionaries and also helps you to improve your documentation.
-
-![Code Spell Checker](https://raw.githubusercontent.com/streetsidesoftware/vscode-spell-checker/master/packages/client/images/example.gif)
-
----
-
-### Task Explorer
-
-[Task Explorer](https://marketplace.visualstudio.com/items?itemName=spmeesseman.vscode-taskexplorer) provides a tree view to display all supported (also VS Code tasks and make targets) tasks. It's really helpful to manage and run your tasks just with a click.
-
-![https://raw.githubusercontent.com/spmeesseman/vscode-taskexplorer/master/res/taskview1.png](https://raw.githubusercontent.com/spmeesseman/vscode-taskexplorer/master/res/taskview1.png)
-
-<!-- TODO: HexInspector -->
-
+See the [Extension](doc/Extensions.md) documentation for details on other supportive extensions that can enhance your development workflow.
 
 ---
 
@@ -553,7 +503,7 @@ That is a really cool feature, especially for refactoring/renaming tasks. So don
 
 ## About CMake variants
 
-The `cmake-variants.yaml` is a nice tool to setup different compiler instrumentations and generally changing the flags. But there's one problem currently. If you use the same CMake definitions in different combined variants, only the last one will be taken. E.g. if you enable coverage and the address sanitizer, only one of it will work because they share the same `CMAKE_CXX_FLAGS` definition. 
+The `cmake-variants.yaml` is a nice tool to setup different compiler instrumentations and generally changing the flags. But there's one problem currently. If you use the same CMake definitions in different combined variants, only the last one will be taken. E.g. if you enable coverage and the address sanitizer, only one of it will work because they share the same `CMAKE_CXX_FLAGS` definition.
 
 Another drawback is the use of the settings within a CI pipeline. So using an additional CMake include file might be a better approach. Then you can activate this over a variant definition and it it is also usable by a pipeline. I will provide an example if i got time to do it.
 
@@ -571,6 +521,7 @@ Another drawback is the use of the settings within a CI pipeline. So using an ad
 - More on CMake variants and CMake extension: [https://code.visualstudio.com/docs/cpp/cmake-linux#_select-a-variant](https://code.visualstudio.com/docs/cpp/cmake-linux#_select-a-variantctrl)
 - CTest: [https://cmake.org/cmake/help/latest/manual/ctest.1.html](https://cmake.org/cmake/help/latest/manual/ctest.1.html)
 
-### Docker 
+### Docker
+
 - Installing docker: [https://docs.docker.com/get-docker/](https://docs.docker.com/get-docker/)
 - Working with containers in VS Code: [https://code.visualstudio.com/docs/containers/overview](https://code.visualstudio.com/docs/containers/overview)

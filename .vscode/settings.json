@@ -9,5 +9,9 @@
     "clang-tidy.buildPath" : "build/", // needs to find the compile_commands.json
     "clang-tidy.executable" : "clang-tidy", 
 
-    "testExplorer.codeLens": true
+    "testExplorer.codeLens": true,
+    "markdown.extension.toc.slugifyMode": "github",
+    "editor.codeActionsOnSave": {
+        "source.fixAll.markdownlint": true
+    }
 }

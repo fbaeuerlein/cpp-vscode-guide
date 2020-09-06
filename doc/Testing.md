@@ -1,6 +1,8 @@
 
 # Testing <!-- omit in toc -->
 
+## Table of contents <!-- omit in toc -->
+
 - [Overview](#overview)
 - [Test Explorer UI](#test-explorer-ui)
 - [C++ TestMate](#c-testmate)
@@ -32,6 +34,5 @@ A very nice feature is the debugging capability of the extension. If a certain t
 When activating CodeLens within `settings.json` by adding `"testExplorer.codeLens": true`, you get a very nice annotation on succeeding and failing tests. Also selection and running out of the editor itself is possible with it.
 
 ![CodeLens on Testmate](../images/TestMateCodeLens.png)
-
 
 If you need special settings for a test you can also customize this (e.g. certain random seed, other args, etc.).
