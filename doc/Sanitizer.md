@@ -9,6 +9,7 @@
 - [Memory Sanitizer](#memory-sanitizer)
 - [UndefinedBehavior Sanitizer](#undefinedbehavior-sanitizer)
 - [Thread Sanitizer](#thread-sanitizer)
+- [References](#references)
 
 ---
 
@@ -112,3 +113,9 @@ The thread sanitizer helps you to detect data races.
           CMAKE_C_FLAGS: "-fsanitize=thread"
 
 Fore more details see: [https://clang.llvm.org/docs/ThreadSanitizer.html](https://clang.llvm.org/docs/ThreadSanitizer.html).
+
+---
+
+## References
+
+- Comparison of Clang sanitizers with other tools: [https://github.com/google/sanitizers/wiki/AddressSanitizerComparisonOfMemoryTools](https://github.com/google/sanitizers/wiki/AddressSanitizerComparisonOfMemoryTools)
