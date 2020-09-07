@@ -13,5 +13,9 @@
     "markdown.extension.toc.slugifyMode": "github",
     "editor.codeActionsOnSave": {
         "source.fixAll.markdownlint": true
-    }
+    }, 
+
+    "coverage-gutters.coverageFileNames": [
+        "lcov.info"
+    ]
 }

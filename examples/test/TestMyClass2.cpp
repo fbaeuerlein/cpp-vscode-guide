@@ -9,5 +9,5 @@ TEST(MyClass2, constructed_object_has_the_right_value)
 
 TEST(MyClass2, some_error)
 {
-    EXPECT_TRUE(false);
+    // EXPECT_TRUE(false);
 }

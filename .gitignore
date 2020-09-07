@@ -2,5 +2,5 @@ build/
 latex/
 html/
 coverage/
-lcov.info
+*.info
 .clangd
