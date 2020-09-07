@@ -1,6 +1,6 @@
 # cpp-vscode-guide <!-- omit in toc -->
 
-A small guide for useful extensions to unleash the power of Visual Studio Code for C/C++ development. And damn, it's becoming better and better!
+A guide for useful extensions and configuration examples to unleash the power of Visual Studio Code for C/C++ development. And damn, it's becoming better and better. With the use of extensions it's a really great tool that supports your everyday developing.
 
 # Table of contents <!-- omit in toc -->
 
@@ -34,7 +34,7 @@ A small guide for useful extensions to unleash the power of Visual Studio Code f
 
 # 1. About the project
 
-This project should give an overview over some extensions and hints for C/C++ development with VS Code. There are a lot extensions around that really improve working with VCS. I want to show which of these are really valuable and give some tutorial how to use/integrate them.
+This project should give an overview over some extensions and examples for C/C++ development with VS Code. There are a lot extensions around that really improve working with VCS. I want to show which of them are really valuable and give some examples how to use/integrate them.
 
 Mostly i'm using CMake and Linux. So the main focus will be on this combination. Maybe i will extend this to the [Windows-Subsystem for Linux (WSL)](https://docs.microsoft.com/de-de/windows/wsl/install-win10) in future.
 
@@ -52,7 +52,7 @@ A detailed description how to install it under linux could be found [here](https
 
 ## 2.2. C/C++ Extension
 
-To make VS Code familiar with C++, i.e. language support, debugging, etc., you need the official Microsoft C/C++ extension found at the [marketplace](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools). Simply install it via the extension panel from the activity bar.
+To make VS Code familiar with C++, i.e. language support, debugging, etc., you need the C/C++ extension found at the [marketplace](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools). Formerly it was maintained by [vector-of-bool](https://github.com/vector-of-bool) (thanks for that great extension!). Simply install it via the extension panel from the activity bar.
 
 ---
 
