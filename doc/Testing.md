@@ -38,3 +38,5 @@ When activating CodeLens within `settings.json` by adding `"testExplorer.codeLen
 ![CodeLens on Testmate](../images/TestMateCodeLens.png)
 
 If you need special settings for a test you can also customize this (e.g. certain random seed, other args, etc.).
+
+**Currently the extension has it's CodeLens features only available if you're using googletest 1.8.0 ore above!**
