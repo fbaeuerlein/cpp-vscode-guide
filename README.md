@@ -52,7 +52,7 @@ A detailed description how to install it under linux could be found [here](https
 
 ## 2.2. C/C++ Extension
 
-To make VS Code familiar with C++, i.e. language support, debugging, etc., you need the C/C++ extension found at the [marketplace](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools). Formerly it was maintained by [vector-of-bool](https://github.com/vector-of-bool) (thanks for that great extension!). Simply install it via the extension panel from the activity bar.
+To make VS Code familiar with C++, i.e. language support, debugging, etc., you need the C/C++ extension found at the [marketplace](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools). Simply install it via the extension panel from the activity bar.
 
 ---
 

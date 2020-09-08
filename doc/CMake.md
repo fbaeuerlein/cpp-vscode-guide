@@ -17,7 +17,7 @@ Tools that support you managing and maintaining CMake projects with VS Code.
 
 ## Microsoft CMake Tools
 
-To interact with CMake, the CMake Tools extension is there. It could be found [here](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools).
+To interact with CMake, the CMake Tools extension is there. It could be found [here](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cmake-tools). Formerly it was maintained by [vector-of-bool](https://github.com/vector-of-bool) (thanks for that great extension!) and is now maintained by Microsoft.
 
 Especially the the CMake Quickstart feature, usable with the command palette (`Ctrl+Shift+P`) running **CMake: Quickstart**, is pretty nice to starting coding right away.
 
