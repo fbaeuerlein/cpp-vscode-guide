@@ -65,7 +65,7 @@ To make VS Code familiar with C++, i.e. language support, debugging, etc., you n
 
 # 3. CMake
 
-How to manage CMake projects with VS Code could be found in the [CMake](doc/CMake.md) section.
+How to manage CMake projects with VS Code could be found in the [CMake](doc/CMake.md) section. If you're not keen on using CMake, you can have a look at [https://code.visualstudio.com/docs/cpp/config-linux](https://code.visualstudio.com/docs/cpp/config-linux) how to setup a plain compiling environment.
 
 ---
 
@@ -162,6 +162,7 @@ Another drawback is the use of the settings within a CI pipeline. So using an ad
 
 - More on VS Code, C/C++ & Linux: [https://code.visualstudio.com/docs/cpp/config-linux](https://code.visualstudio.com/docs/cpp/config-linux)
 - Overview of C++ editing in VS Code: [https://code.visualstudio.com/docs/cpp/cpp-ide](https://code.visualstudio.com/docs/cpp/cpp-ide)
+- Debugging on Linux with VS Code: [https://code.visualstudio.com/docs/cpp/cpp-debug](https://code.visualstudio.com/docs/cpp/cpp-debug)
 
 ## 16.2. CMake
 

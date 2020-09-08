@@ -21,7 +21,7 @@ To interact with CMake, the CMake Tools extension is there. It could be found [h
 
 Especially the the CMake Quickstart feature, usable with the command palette (`Ctrl+Shift+P`) running **CMake: Quickstart**, is pretty nice to starting coding right away.
 
-For details on how to setup, configure and build projects, see [https://github.com/microsoft/vscode-cmake-tools/blob/develop/docs/README.md](https://github.com/microsoft/vscode-cmake-tools/blob/develop/docs/README.md)
+For details on how to setup, configure and build projects, see [https://github.com/microsoft/vscode-cmake-tools/blob/develop/docs/README.md](https://github.com/microsoft/vscode-cmake-tools/blob/develop/docs/README.md) and [https://code.visualstudio.com/docs/cpp/cmake-linux](https://code.visualstudio.com/docs/cpp/cmake-linux).
 
 ---
 
