@@ -18,7 +18,7 @@ This documentation shows how to configure and run VS Code to support you with st
 
 **Doing a static analysis on the fly during your coding session without any additional effort!**
 
-![clang-tidy extension in action](images/clang-tidy.png)
+![clang-tidy extension in action](../images/clang-tidy.gif)
 
 The curly underlined statement was discovered by clang-tidy to be problematic (assign to nullptr).
 
