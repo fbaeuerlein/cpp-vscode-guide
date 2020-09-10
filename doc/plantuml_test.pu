@@ -1,0 +1,6 @@
+@startuml
+
+actor Me
+Me -> You : show PlantUML
+You -> Other : look, that's nice
+@enduml
