@@ -5,6 +5,7 @@
 - [Overview](#overview)
 - [Bracket Pair Colorizer](#bracket-pair-colorizer)
 - [Todo Tree](#todo-tree)
+- [Pomodoro Timer](#pomodoro-timer)
 - [YAML](#yaml)
 - [Code Spell Checker](#code-spell-checker)
 - [Task Explorer](#task-explorer)
@@ -32,6 +33,14 @@ Some other helpful (not necessarily C/C++ related) extensions to support develop
 <!-- **TODO:** remove old image -->
 
 ![TodoTree](https://raw.githubusercontent.com/Gruntfuggly/todo-tree/master/resources/screenshot.png)
+
+---
+
+## Pomodoro Timer
+
+The [Pomodoro Timer](https://marketplace.visualstudio.com/items?itemName=lkytal.pomodoro) helps you to manage your workflow and focus time easily. It reminds you to take a break or focusing on the other task you have to do besides coding.
+
+See [Pomodoro Technique](https://en.wikipedia.org/wiki/Pomodoro_Technique) for details about the method itself.
 
 ---
 
