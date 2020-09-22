@@ -19,7 +19,8 @@ A guide for useful extensions and configuration examples to unleash the power of
 - [9. Code formatting & cleanup](#9-code-formatting--cleanup)
 - [10. Code Coverage](#10-code-coverage)
 - [11. Integrate Clang sanitizers](#11-integrate-clang-sanitizers)
-- [12. GitHub integration](#12-github-integration)
+- [12. Git integration](#12-git-integration)
+- [13. GitHub integration](#13-github-integration)
 - [13. Other nice extensions](#13-other-nice-extensions)
 - [14. Some shortcuts and features](#14-some-shortcuts-and-features)
   - [14.1. Official VS Code shortcut cheat sheet](#141-official-vs-code-shortcut-cheat-sheet)
@@ -121,7 +122,13 @@ More about the integration of the Clang sanitizers could be found in the [Clang 
 
 ---
 
-# 12. GitHub integration
+# 12. Git integration
+
+See helpful extensions that are dealing with git in the [Git](doc/git.md) documentation.
+
+---
+
+# 13. GitHub integration
 
 An overview how to use GitHub together with VS Could be found within the [GitHub integration documentation](doc/GitHub.md).
 
