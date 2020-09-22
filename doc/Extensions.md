@@ -55,6 +55,8 @@ The [RedHat YAML Extension](https://marketplace.visualstudio.com/items?itemName=
 
 [Task Explorer](https://marketplace.visualstudio.com/items?itemName=spmeesseman.vscode-taskexplorer) provides a tree view to display all supported (also VS Code tasks and make targets) tasks. It's really helpful to manage and run your tasks just with a click.
 
+It also detects script files (e.g. bash scripts) and shows it within the task list. Using installation and setup scripts was never that easy! See the automatically detected test script in the workspace root.
+
 ![https://raw.githubusercontent.com/spmeesseman/vscode-taskexplorer/master/res/taskview1.png](https://raw.githubusercontent.com/spmeesseman/vscode-taskexplorer/master/res/taskview1.png)
 
 ---
