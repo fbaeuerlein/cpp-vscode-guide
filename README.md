@@ -15,6 +15,7 @@ A guide for useful extensions and configuration examples to unleash the power of
 - [6. Documentation](#6-documentation)
 - [7. Remote development](#7-remote-development)
   - [7.1. Remote SSH Extension](#71-remote-ssh-extension)
+  - [7.2. References](#72-references)
 - [8. Static analysis](#8-static-analysis)
 - [9. Code formatting & cleanup](#9-code-formatting--cleanup)
 - [10. Code Coverage](#10-code-coverage)
@@ -94,7 +95,14 @@ Some extensions can greatly enhance your documentation capabilities. See the [do
 
 If you are developing for remotely connected devices (e.g. RPi), the [Remote - SSH](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-ssh) extension saves a lot of time. It enables you to work with VS Code like you are used to work locally. The communication is done via SSH. So also autologin via certificates is possible.  
 
+Also a nice feature is the possibility to configure port forwarding if you are connected to the remote machine.
+
 ![SSH extension](images/ssh-ext.png)
+
+## 7.2. References
+
+- [Overview and getting started](https://code.visualstudio.com/docs/remote/ssh)
+- [Troubleshooting for Remote SSH Extension](https://code.visualstudio.com/docs/remote/troubleshooting)
 
 ---
 
