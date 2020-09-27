@@ -6,7 +6,7 @@
 - [Overview](#overview)
 - [Docker extension](#docker-extension)
 - [VS Code Remote Containers](#vs-code-remote-containers)
-
+- [References](#references)
 ---
 
 ## Overview
@@ -35,4 +35,8 @@ After installation map your development folder via the command palette (`Ctrl+Sh
 
 See the `.devcontainer/devcontainer.json` settings file for details. It refers to the container description in `examples/Dockerfile`.
 
-For more details, see [https://github.com/Microsoft/vscode-dev-containers](https://github.com/Microsoft/vscode-dev-containers).
+
+## References
+
+- Details on development containers: [https://github.com/Microsoft/vscode-dev-containers](https://github.com/Microsoft/vscode-dev-containers).
+- Advanced container related topics: [https://code.visualstudio.com/docs/remote/containers-advanced](https://code.visualstudio.com/docs/remote/containers-advanced)
