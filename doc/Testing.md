@@ -6,6 +6,7 @@
 - [Overview](#overview)
 - [Test Explorer UI](#test-explorer-ui)
 - [C++ TestMate](#c-testmate)
+- [References](#references)
 
 ---
 
@@ -39,4 +40,9 @@ When activating CodeLens within `settings.json` by adding `"testExplorer.codeLen
 
 If you need special settings for a test you can also customize this (e.g. certain random seed, other args, etc.).
 
-**Currently the extension has it's CodeLens features only available if you're using googletest 1.8.0 ore above!**
+**Currently the extension has it's CodeLens features for googletest only available if you're using googletest 1.8.0 or above!**
+
+## References
+
+- Testing framework googletest: [https://github.com/google/googletest](https://github.com/google/googletest)
+- Testing framework Catch2: [https://github.com/catchorg/Catch2](https://github.com/catchorg/Catch2)
