@@ -7,6 +7,7 @@
 - [Docker extension](#docker-extension)
 - [VS Code Remote Containers](#vs-code-remote-containers)
 - [References](#references)
+
 ---
 
 ## Overview
@@ -17,7 +18,7 @@ Tools that support you managing and maintaining docker images or building your p
 
 ## Docker extension
 
-The [docker extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker) gives you a good insight on the current images on the system and helps you to build and manage containers. Also running the images is pretty easy that way.
+The [docker extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker) gives you a good insight on the current images on the system and helps you to build and manage containers. Also running the images is pretty easy that way. Furthermore it shows you the volumes, networks and registries used by docker.
 
 ![https://raw.githubusercontent.com/microsoft/vscode-docker/master/resources/readme/overview.gif](https://raw.githubusercontent.com/microsoft/vscode-docker/master/resources/readme/overview.gif)
 
@@ -35,6 +36,7 @@ After installation map your development folder via the command palette (`Ctrl+Sh
 
 See the `.devcontainer/devcontainer.json` settings file for details. It refers to the container description in `examples/Dockerfile`.
 
+Extensions must be installed separately within the container. To automate this, you could edit the `extensions` array within your `.devcontainer/devcontainer.json` configuration.
 
 ## References
 
