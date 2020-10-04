@@ -12,4 +12,7 @@ RUN apt-get -y install git
 RUN apt-get -y install build-essential cmake clang-tidy clang 
 
 # install documentation stuff
-RUN apt-get -y install doxygen mscgen graphviz 
+RUN apt-get -y install doxygen plantuml graphviz 
+
+# other 
+RUN apt-get -y install lcov
