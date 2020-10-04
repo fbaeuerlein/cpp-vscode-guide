@@ -36,7 +36,9 @@ After installation map your development folder via the command palette (`Ctrl+Sh
 
 See the `.devcontainer/devcontainer.json` settings file for details. It refers to the container description in `examples/Dockerfile`.
 
-Extensions must be installed separately within the container. To automate this, you could edit the `extensions` array within your `.devcontainer/devcontainer.json` configuration.
+Extensions must be installed separately within the container. To automate this, you could edit the `extensions` array within your `.devcontainer/devcontainer.json` configuration and add the corresponding extension id.
+
+![Add extension id](../images/dev-container-copy-extension-id.gif)
 
 ## References
 

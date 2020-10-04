@@ -19,7 +19,7 @@
 		"ms-vscode.cmake-tools", 
 		"bbenoist.Doxygen",
 		"xaver.clang-format",
-		
+		"spmeesseman.vscode-taskexplorer"
 	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
