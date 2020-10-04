@@ -113,6 +113,8 @@ Some sample how to run lcov and filter unwanted results afterwards.
 See the `.vscode/tasks.json` for a more detailed example that runs lcov, filters the result, runs genhtml to generate a HTML report and finally starts firefox to display it.
 The build/scan folders and the browser should be configured to match your setup.
 
+**The steps are only working if you use a GCC compiler with the according instrumentation!**
+
 To run the tasks, open the command palette (`Ctrl+Shift+P`) and run **Tasks: Run Task**. A nice alternative to that is the use of an extension like [Task Explorer](https://marketplace.visualstudio.com/items?itemName=spmeesseman.vscode-taskexplorer) that helps you to show and manage the tasks.
 
 The sample workflow shown in `tasks.json` to generate a coverage report is:
