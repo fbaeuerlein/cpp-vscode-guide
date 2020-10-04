@@ -74,4 +74,10 @@ It also detects script files (e.g. bash scripts) and shows it within the task li
 
 [Markdown lint](https://marketplace.visualstudio.com/items?itemName=DavidAnson.vscode-markdownlint) supports you on writing markdown files by linting and style checking.
 
+## Live Server
+
+If you are developing within the dev containers, opening a browser from the tasks is not possible. So use the [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) extension to display HTML files (e.g. from doxygen or coverage). It automatically reloads the pages on change. So you don't even to do a reload!
+
+Adapt the port settings in `.vscode/settings.json` and `.devcontainer/devcontainer.json` to connect on localhost to the specified port with your browser.
+
 <!-- TODO: HexInspector -->

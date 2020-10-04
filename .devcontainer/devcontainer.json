@@ -15,15 +15,58 @@
 
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
+		// C/C++ & CMake support
 		"ms-vscode.cpptools",
 		"ms-vscode.cmake-tools", 
+		"cheshirekow.cmake-format",
+		"twxs.cmake",
+
+		// Doxygen
 		"bbenoist.Doxygen",
+		"cschlosser.doxdocgen",
+		"betwo.vscode-doxygen-runner",
+
+		// Markdown
+		"yzhang.markdown-all-in-one",
+		"davidanson.vscode-markdownlint",
+		
+		"jebbs.plantuml",
+		"2gua.rainbow-brackets",
+
+		// Git
+		"mhutchie.git-graph",
+		"eamodio.gitlens",
+
+		// GitHub
+		"github.vscode-pull-request-github",
+		"kenhowardpdx.vscode-gist",
+
+		// clang freatures
 		"xaver.clang-format",
-		"spmeesseman.vscode-taskexplorer"
+		"notskm.clang-tidy",
+
+		// Testing
+		"hbenl.vscode-test-explorer",
+		"matepek.vscode-catch2-test-adapter",
+
+		// other
+		"spmeesseman.vscode-taskexplorer",
+		"gruntfuggly.todo-tree",
+		"redhat.vscode-yaml",
+		"ms-python.python",
+		"ms-azuretools.vscode-docker",
+		"ryanluker.vscode-coverage-gutters",
+		"pokowaka.pokowaka-iwyu",
+		"ritwickdey.liveserver", 
+
+		// remote 
+		"ms-vscode-remote.vscode-remote-extensionpack",
+		"ms-vscode-remote.remote-ssh-edit",
+		"ms-vscode-remote.remote-ssh"
 	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	// "forwardPorts": [],
+	"forwardPorts": [ 5500 ],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "gcc -v",

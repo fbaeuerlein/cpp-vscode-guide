@@ -17,5 +17,7 @@
 
     "coverage-gutters.coverageFileNames": [
         "lcov.info"
-    ]
+    ], 
+    
+    "liveServer.settings.port": 5500
 }
