@@ -88,6 +88,12 @@ VS Code has some nice extensions to handle testing very comfortable. See the [Te
 
 The [docker](doc/Docker.md) section describes how to use extensions for building, managing and running containers from VS Code.
 
+Current topics:
+
+- Installing docker extension
+- Develop within docker and configure it with `devcontainer.json`
+- Using remote containerd instances
+
 ---
 
 # 7. Documentation
