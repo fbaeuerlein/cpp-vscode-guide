@@ -24,14 +24,15 @@ A guide for useful extensions and configuration examples to unleash the power of
 - [13. Git integration](#13-git-integration)
 - [14. GitHub integration](#14-github-integration)
 - [15. Other nice extensions](#15-other-nice-extensions)
-- [16. Some shortcuts and features](#16-some-shortcuts-and-features)
-  - [16.1. Official VS Code shortcut cheat sheet](#161-official-vs-code-shortcut-cheat-sheet)
-  - [16.2. Column selection mode](#162-column-selection-mode)
-- [17. About CMake variants](#17-about-cmake-variants)
-- [18. References](#18-references)
-  - [18.1. General](#181-general)
-  - [18.2. CMake](#182-cmake)
-  - [18.3. Docker](#183-docker)
+- [16. Logfile handling](#16-logfile-handling)
+- [17. Some shortcuts and features](#17-some-shortcuts-and-features)
+  - [17.1. Official VS Code shortcut cheat sheet](#171-official-vs-code-shortcut-cheat-sheet)
+  - [17.2. Column selection mode](#172-column-selection-mode)
+- [18. About CMake variants](#18-about-cmake-variants)
+- [19. References](#19-references)
+  - [19.1. General](#191-general)
+  - [19.2. CMake](#192-cmake)
+  - [19.3. Docker](#193-docker)
 
 ---
 
@@ -162,21 +163,31 @@ See the [Extension](doc/Extensions.md) documentation for details on other suppor
 
 ---
 
-# 16. Some shortcuts and features
+# 16. Logfile handling
 
-## 16.1. Official VS Code shortcut cheat sheet
+Often you have to deal with logfiles for debugging purposes. If you know the analyze plugin from Notepad++ you will have fun with the [Text Power Tools](https://marketplace.visualstudio.com/items?itemName=qcz.text-power-tools) extension. Filtering larger text files, also with regular expressions, is possible with this nice plugin. Additionally you can restructure your data with an AWK like extraction.
+
+Another nice extension that adds highlighting to logfiles is (Logfile Highligher)[https://marketplace.visualstudio.com/items?itemName=emilast.LogFileHighlighter]. It is costumizable and has a lot of nice features to support you digging through your logs.
+
+!(Logfile Highligher[https://raw.githubusercontent.com/emilast/vscode-logfile-highlighter/master/content/sample.png]
+
+---
+
+# 17. Some shortcuts and features
+
+## 17.1. Official VS Code shortcut cheat sheet
 
 The basic VS Code shortcuts can be found [here](https://code.visualstudio.com/shortcuts/keyboard-shortcuts-windows.pdf)
 
 ---
 
-## 16.2. Column selection mode
+## 17.2. Column selection mode
 
 That is a really cool feature, especially for refactoring/renaming tasks. So don't miss to use it with opening the command palette (`Ctrl+Shift+P`) and run **Toggle column selection mode**.
 
 ---
 
-# 17. About CMake variants
+# 18. About CMake variants
 
 The `cmake-variants.yaml` is a nice tool to setup different compiler instrumentations and generally changing the flags. But there's one problem currently. If you use the same CMake definitions in different combined variants, only the last one will be taken. E.g. if you enable coverage and the address sanitizer, only one of it will work because they share the same `CMAKE_CXX_FLAGS` definition.
 
@@ -184,20 +195,20 @@ Another drawback is the use of the settings within a CI pipeline. So using an ad
 
 ---
 
-# 18. References
+# 19. References
 
-## 18.1. General
+## 19.1. General
 
 - More on VS Code, C/C++ & Linux: [https://code.visualstudio.com/docs/cpp/config-linux](https://code.visualstudio.com/docs/cpp/config-linux)
 - Overview of C++ editing in VS Code: [https://code.visualstudio.com/docs/cpp/cpp-ide](https://code.visualstudio.com/docs/cpp/cpp-ide)
 - Debugging on Linux with VS Code: [https://code.visualstudio.com/docs/cpp/cpp-debug](https://code.visualstudio.com/docs/cpp/cpp-debug)
 
-## 18.2. CMake
+## 19.2. CMake
 
 - More on CMake variants and CMake extension: [https://code.visualstudio.com/docs/cpp/cmake-linux#_select-a-variant](https://code.visualstudio.com/docs/cpp/cmake-linux#_select-a-variantctrl)
 - CTest: [https://cmake.org/cmake/help/latest/manual/ctest.1.html](https://cmake.org/cmake/help/latest/manual/ctest.1.html)
 
-## 18.3. Docker
+## 19.3. Docker
 
 - Installing docker: [https://docs.docker.com/get-docker/](https://docs.docker.com/get-docker/)
 - Working with containers in VS Code: [https://code.visualstudio.com/docs/containers/overview](https://code.visualstudio.com/docs/containers/overview)
