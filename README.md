@@ -167,9 +167,9 @@ See the [Extension](doc/Extensions.md) documentation for details on other suppor
 
 Often you have to deal with logfiles for debugging purposes. If you know the analyze plugin from Notepad++ you will have fun with the [Text Power Tools](https://marketplace.visualstudio.com/items?itemName=qcz.text-power-tools) extension. Filtering larger text files, also with regular expressions, is possible with this nice plugin. Additionally you can restructure your data with an AWK like extraction.
 
-Another nice extension that adds highlighting to logfiles is (Logfile Highligher)[https://marketplace.visualstudio.com/items?itemName=emilast.LogFileHighlighter]. It is costumizable and has a lot of nice features to support you digging through your logs.
+Another nice extension that adds highlighting to logfiles is [Logfile Highligher](https://marketplace.visualstudio.com/items?itemName=emilast.LogFileHighlighter). It is costumizable and has a lot of nice features to support you digging through your logs.
 
-!(Logfile Highligher[https://raw.githubusercontent.com/emilast/vscode-logfile-highlighter/master/content/sample.png]
+![Logfile Highligher](https://raw.githubusercontent.com/emilast/vscode-logfile-highlighter/master/content/sample.png)
 
 ---
 
